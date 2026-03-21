@@ -1,0 +1,11 @@
+name: R3ALCYB3R Code Check
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 🟢 Check Syntax
+        run: node --check App.js
