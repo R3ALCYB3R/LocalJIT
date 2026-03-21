@@ -1,3 +1,5 @@
+![Build Status](https://github.com/R3ALCYB3R/LocalJIT/actions/workflows/check.yml/badge.svg)
+
 # ⚡ LocalJIT
 **Neon-powered JIT Injection & Local Loopback VPN Utility for iOS**
 
