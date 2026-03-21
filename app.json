@@ -1,22 +1,22 @@
 {
-  "expo": {
-    "name": "LocalJIT",
-    "slug": "local-jit-r3alcyb3r",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0a0a0a"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
+  "name": "LocalJIT Official Source",
+  "identifier": "com.r3alcyb3r.localjit.source",
+  "subtitle": "JIT Activation by R3ALCYB3R",
+  "description": "The official repository for the LocalJIT utility, designed for seamless JIT activation on iOS devices.",
+  "iconURL": "https://raw.githubusercontent.com/R3ALCYB3R/LocalJIT/main/assets/icon.png",
+  "apps": [
+    {
+      "name": "LocalJIT",
       "bundleIdentifier": "com.r3alcyb3r.localjit",
-      "supportsTablet": true
+      "developerName": "R3ALCYB3R",
+      "version": "1.0.0",
+      "versionDate": "2026-03-21",
+      "versionDescription": "Initial stable release featuring the Neon Purple UI.",
+      "downloadURL": "https://github.com/R3ALCYB3R/LocalJIT/releases/latest/download/LocalJIT.ipa",
+      "localizedDescription": "Activate Just-In-Time compilation on-device. Perfect for high-performance emulation and system utilities.",
+      "iconURL": "https://raw.githubusercontent.com/R3ALCYB3R/LocalJIT/main/assets/icon.png",
+      "tintColor": "#a020f0",
+      "size": 5242880
     }
-  }
+  ]
 }
