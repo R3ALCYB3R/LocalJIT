@@ -2,21 +2,21 @@
   "expo": {
     "name": "LocalJIT",
     "slug": "local-jit-r3alcyb3r",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "splash": {
-  "image": "./assets/splash.png",
-  "resizeMode": "contain",
-  "backgroundColor": "#0a0a0a" 
-},
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a0a"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.r3alcyb3r.localjit"
+      "bundleIdentifier": "com.r3alcyb3r.localjit",
+      "supportsTablet": true
     }
   }
 }
