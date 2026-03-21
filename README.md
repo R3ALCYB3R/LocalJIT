@@ -1,20 +1,18 @@
-# ⚡️ LocalJIT
-### Advanced JIT Injection & Loopback VPN Utility
+# ⚡ LocalJIT
+**Neon-powered JIT Injection & Local Loopback VPN Utility for iOS**
 
-LocalJIT is a high-performance system utility designed to manage JIT (Just-In-Time) compilation and local network tunneling for iOS emulation.
+LocalJIT is a high-performance system utility designed to manage JIT (Just-In-Time) compilation and network tunneling for virtualized environments on non-jailbroken iOS devices.
 
----
+## 🚀 Features
+* **JIT Unlocker:** Mounts Developer Disk Images (DDI) via local pairing.
+* **Architecture:** Optimized for ARM64 virtualization (UTM/MeloNX).
+* **UI:** R3ALCYB3R Neon-Purple interface with real-time tunnel status.
+* **Compatibility:** Designed for SideStore and LiveContainer environments.
 
-## 🎨 Design Language
-- **Accent:** Neon Purple (#BF00FF)
-- **Theme:** Ultra Dark Mode
-- **Status:** [DEVELOPMENT PHASE]
-
-## 🛠️ Features (Planned)
-- One-tap JIT initialization.
-- Local Loopback VPN for stable debugger attachment.
-- Real-time ARM64 system diagnostics.
-- Optimized for SwitchUI and other high-performance engines.
+## 🛠️ Requirements
+* iOS 15.0 or higher.
+* `.mobiledevicepairing` file (Place in root directory).
+* JIT-enabled sideloading client.
 
 ---
-*A R3ALCYB3R Original Project.*
+*Created by **R3ALCYB3R** | Licensed under MIT*
