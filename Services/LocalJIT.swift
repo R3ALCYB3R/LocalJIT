@@ -1,21 +1,24 @@
 import Foundation
+import SwiftUI
 
-class LocalJITManager {
-    static let shared = LocalJITManager()
+class LocalJIT: ObservableObject {
+    static let shared = LocalJIT()
     
-    @Published var isJITEnabled = false
-    
-    func tryEnableJIT() -> Bool {
-        // This is where you call the C++ ptrace logic
-        // For sideloaded apps, we check if the memory can be marked as Executable
-        let result = check_jit_status() 
-        self.isJITEnabled = (result == 0)
-        return self.isJITEnabled
-    }
-    
-    private func check_jit_status() -> Int32 {
-        // Placeholder for the C++ ptrace/task_for_pid check
-        // On iOS 16.7.11, this returns 0 if SideStore successfully attached
-        return 0 
+    @Published var isActive: Bool = false
+    @Published var statusMessage: String = "JIT Ready"
+
+    func enable() {
+        // This calls the C++ function in our Bridge to trigger ptrace
+        let result = JITBridge.triggerJIT()
+        
+        DispatchQueue.main.async {
+            if result == 0 {
+                self.isActive = true
+                self.statusMessage = "JIT ENABLED"
+            } else {
+                self.isActive = false
+                self.statusMessage = "JIT FAILED (Code: \(result))"
+            }
+        }
     }
 }
